@@ -198,12 +198,6 @@ body{
 }
 
 
-.attribution > a{
-    color: hsl(0, 0%, 100%);
-
-}
-
-
 @keyframes left-anim{
     0%{
         transform: translateY(100px);

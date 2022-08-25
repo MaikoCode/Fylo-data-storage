@@ -198,6 +198,12 @@ body{
 }
 
 
+.attribution > a{
+    color: hsl(0, 0%, 100%);
+
+}
+
+
 @keyframes left-anim{
     0%{
         transform: translateY(100px);
@@ -213,13 +219,21 @@ body{
     }
 }
 
+@keyframes left-anim2{
+    0%{
+        transform: translateX(100px);
+        opacity: 0.2;
+    }
 
-@media only screen and (min-width: 400px){
-    .storage-left{
-        left: calc(50% - 31% + 5px);
-        
+    50%{
+        opacity: 0.5;
+    }
+
+    100%{
+        opacity: 1%;
     }
 }
+
 
 
 /* Desktop version */
@@ -262,6 +276,8 @@ body{
     .left{
         width: 30%;
         margin-right: 25px;
+        animation: left-anim2 1s ease-in-out;
+
     }
 
     .right{
@@ -291,9 +307,3 @@ body{
         left: 55%;
     }
 }
-
-
-  
-
-
-
